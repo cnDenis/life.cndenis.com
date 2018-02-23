@@ -43,8 +43,8 @@ SUMMARY_MAX_LENGTH = 20
 
 DISPLAY_CATEGORIES_ON_MENU = False
 
-CATEGORY_URL = '{slug}.html'
-CATEGORY_SAVE_AS = '{slug}.html'
+CATEGORY_URL = 'category/{slug}.html'
+CATEGORY_SAVE_AS = 'category/{slug}.html'
 
 ARTICLE_SAVE_AS = 'post/{date:%Y}/{date:%m}/{slug}.html'  # 文章生成位置
 ARTICLE_URL = 'post/{date:%Y}/{date:%m}/{slug}.html'  # 文章生成位置
