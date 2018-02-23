@@ -1,0 +1,84 @@
+
+body {
+    font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+}
+
+body>.container {
+    max-width: 970px;
+}
+
+@media (max-width: 767px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+p {
+    color: #2f2f2f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0 0 25px;
+}
+
+
+/* 侧边栏 月份文章*/
+#archive li.list-group-item {
+    padding: 2px 15px;
+}
+
+/* 侧边栏 其他列表*/
+#sidebar li.list-group-item {
+    padding: 5px 15px;
+}
+
+/* 侧边栏 标签云*/
+ul.tagcloud {
+  list-style: none;
+    padding: 0;
+}
+
+#tags li.list-group-item {
+    padding: 0;
+}
+
+ul.tagcloud li {
+    display: inline-block;
+}
+
+li.tag-1 {
+    font-size: 200%;
+}
+
+li.tag-2 {
+    font-size: 150%;
+}
+
+li.tag-3 {
+    font-size: 100%;
+}
+
+li.tag-4 {
+    font-size: 75%;
+}
+
+ul.tagcloud .list-group-item <span>.badge {
+    background-color: grey;
+    color: white;
+}
+
+#aboutme {
+/*    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;*/
+    text-align: center;
+}
+
+#aboutme strong {
+    display: none;
+}
+
+
+p.permalink {
+    color: grey;
+    font-size: 75%;
+}

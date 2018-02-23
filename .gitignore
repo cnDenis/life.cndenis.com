@@ -1,0 +1,4 @@
+Thumbs.db
+*.sublime-workspace
+output/*
+*.pyc
