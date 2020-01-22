@@ -10,9 +10,9 @@ SITEURL = 'http://localhost:8000'
 PATH = '_posts'
 
 TIMEZONE = 'Asia/Shanghai'
-DEFAULT_DATE_FORMAT = '%Y年%m月%d日 星期%a'
+DEFAULT_DATE_FORMAT = u'%Y年%m月%d日 星期%a'
 
-DEFAULT_LANG = u'zh'
+DEFAULT_LANG = u'zh-CN'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -65,10 +65,10 @@ EXTRA_PATH_METADATA = {
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = os.path.join(os.environ.get('HOME'), 'gits/pelican-themes/pelican-bootstrap3')
+THEME = os.path.join(os.path.dirname(os.path.realpath(__file__)), '../pelican-themes/pelican-bootstrap3')
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
-PLUGIN_PATHS = [os.path.join(os.environ.get('HOME'), 'gits/pelican-plugins')]
+PLUGIN_PATHS = [os.path.join(os.path.dirname(os.path.realpath(__file__)), '../pelican-plugins')]
 PLUGINS = [
     'i18n_subsites',
     'tag_cloud',
