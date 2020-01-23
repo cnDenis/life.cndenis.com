@@ -95,7 +95,7 @@ DISPLAY_TAGS_INLINE = True
 DISPLAY_CATEGORIES_ON_SIDEBAR = True  # 在侧边栏显示栏目
 DISPLAY_ARCHIVE_ON_SIDEBAR = True  # 在侧边栏显示月份文章, 仅在MONTH_ARCHIVE_SAVE_AS正确时生效
 
-ABOUT_ME = '<a href="/pages/about.html"><img class="center" src="http://gravatar.com/avatar/8373fc5c4d82aeba56db52f7317ab48d?s=160"></a>'
+ABOUT_ME = '<a href="/pages/about.html"><img class="center" src="https://gravatar.com/avatar/8373fc5c4d82aeba56db52f7317ab48d?s=160"></a>'
 # AVATAR = "http://gravatar.com/avatar/8373fc5c4d82aeba56db52f7317ab48d?s=160" # 只能用相对路径, 可能是Bug
 
 SHOW_DATE_MODIFIED = True  # 显示文章修改时间
