@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>cnDenis的碎碎念</title><link href="https://life.cndenis.com/" rel="alternate"></link><link href="https://life.cndenis.com/feeds/atom.xml" rel="self"></link><id>https://life.cndenis.com/</id><updated>2020-04-03T00:00:00+08:00</updated><entry><title>关于新冠肺炎的一些碎碎念2</title><link href="https://life.cndenis.com/post/2020/04/something_about_2019_ncov_2.html" rel="alternate"></link><published>2020-04-03T00:00:00+08:00</published><updated>2020-04-03T00:00:00+08:00</updated><author><name>cnDenis</name></author><id>tag:life.cndenis.com,2020-04-03:/post/2020/04/something_about_2019_ncov_2.html</id><content type="html">&lt;p&gt;没想到中国的疫情能压下去. 中共实在太牛逼了, 生生把病毒都饿死了. 太多的先前没想到的招数都用出来,
-春节假期延长, 方舱医院, 全民口罩. 这些手段确实有用, 数据就是明证.&lt;/p&gt;
-&lt;p&gt;没想到外国居然爆发了. 之前有人发的波兰球的漫画, 大家在玻璃墙外围观中国生病, 有人说小心墙外变墙内, 真被说中了.&lt;/p&gt;</content><category term="时事"></category><category term="瘟役"></category></entry><entry><title>关于新冠肺炎的一些碎碎念</title><link href="https://life.cndenis.com/post/2020/01/something_about_2019_ncov.html" rel="alternate"></link><published>2020-01-24T00:00:00+08:00</published><updated>2020-01-24T00:00:00+08:00</updated><author><name>cnDenis</name></author><id>tag:life.cndenis.com,2020-01-24:/post/2020/01/something_about_2019_ncov.html</id><summary type="html">&lt;p&gt;距离2003年非典疫情过去了十七年, 吸取当年的教训建立起来的疾控系统在2020年迎来大考.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>cnDenis的碎碎念</title><link href="https://life.cndenis.com/" rel="alternate"></link><link href="https://life.cndenis.com/feeds/atom.xml" rel="self"></link><id>https://life.cndenis.com/</id><updated>2023-06-23T00:00:00+08:00</updated><entry><title>2023年端午节的一点碎碎念</title><link href="https://life.cndenis.com/post/2023/06/something_in_2023.html" rel="alternate"></link><published>2023-06-23T00:00:00+08:00</published><updated>2023-06-23T00:00:00+08:00</updated><author><name>cnDenis</name></author><id>tag:life.cndenis.com,2023-06-23:/post/2023/06/something_in_2023.html</id><summary type="html">&lt;p&gt;上一篇博客还是疫情刚开始, 这一篇已经是放开了.&lt;/p&gt;
+&lt;p&gt;这个博客荒了好多年了, 估计长的蘑菇上面还能再长蘑菇了. 从git上把代码搞下来, 依赖的搜索插件都已经废弃不能用了.
+折腾半天换了它推荐的替代库, 发现对中文支持实在不行, 没有分词, 几乎不可用, 算了, 有需要搜还是用搜索引擎吧.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;上一篇博客还是疫情刚开始, 这一篇已经是放开了.&lt;/p&gt;
+&lt;p&gt;这个博客荒了好多年了, 估计长的蘑菇上面还能再长蘑菇了. 从git上把代码搞下来, 依赖的搜索插件都已经废弃不能用了.
+折腾半天换了它推荐的替代库, 发现对中文支持实在不行, 没有分词, 几乎不可用, 算了, 有需要搜还是用搜索引擎吧.&lt;/p&gt;
+
+
+&lt;p&gt;想给博客装修一下, 毕竟Bootstrap3看起来也是比较老旧的东西了, 看了一下pelican-themes貌似也是要长蘑菇的节奏,
+是不是大家对pelican不太感兴趣了?
+想想每月几百万阅读的阮一峰老师的博客主题也是二十年不变, 加上我自己对前端并不在行, 还是偷懒算了吧.&lt;/p&gt;
+&lt;p&gt;看了一下博客里的标签, 居然还有一个PHP, 里面记录了一个坑. 刚毕业时需要用它来写点东西. 没想到最近的工作中又会遇上.
+十年过去了, 当年好像还是PHP 5吧, 现在都PHP 8了.&lt;/p&gt;
+&lt;p&gt;最近要用的是WordPress, 2003年诞生的, 到今年刚好20年. 一个系统能活20年在这个行业都算得上老妖怪级别的东西了.
+打开来就会看到一些与"现代"的网站架构风格很不一样的感觉.
+比如说, 文件上传就是保存在本机, 放在upload目录下就给人访问了. 比如说后台可以安装插件, 直接下载到本地上的plugins目录下,
+就可以用了. 毕竟原本就是个人博客系统, 设计上就是在单一台服务器, 以至于在一个目录内运行的, 这么做合情合理.
+然而如果要搞两台机做个负载均衡, 这种有状态的服务就不适合了. 当然这都很好解决, 有现成的插件可以把上传文件直接放到对像存储,
+就完事了.&lt;/p&gt;
+&lt;p&gt;WordPress牛的地方在于插件系统, 插件市场有数以万记的各种插件, 养活了不少公司. 不过用好这些插件也不容易,
+同一个功能往往免费收费的都很多, 一个个试也是很费力的, 插件之间还有兼容问题, 用多了系统还会变慢.&lt;/p&gt;
+&lt;p&gt;国内WordPress似乎不太流行, 我想是因为国内个人站点不流行吧. 个人开站手续麻烦, 成本也高, 还不如写个公众号容易变现.
+国外个人站流行得多, 看WordPress的插件价格就知道, 一般都只卖几十美元, 看起来就是针对个人卖的.
+因为国外个人站点人足够多, 这费用才养得起做插件的公司.&lt;/p&gt;</content><category term="折腾电脑"></category></entry><entry><title>关于新冠肺炎的一些碎碎念</title><link href="https://life.cndenis.com/post/2020/01/something_about_2019_ncov.html" rel="alternate"></link><published>2020-01-24T00:00:00+08:00</published><updated>2020-01-24T00:00:00+08:00</updated><author><name>cnDenis</name></author><id>tag:life.cndenis.com,2020-01-24:/post/2020/01/something_about_2019_ncov.html</id><summary type="html">&lt;p&gt;距离2003年非典疫情过去了十七年, 吸取当年的教训建立起来的疾控系统在2020年迎来大考.&lt;/p&gt;
 &lt;p&gt;科研系统的效率是令人惊叹的. 一个全新的未知疾病从送样本到病源确认再到全基因组测序完成, 仅仅用了半个月! 就不说二十世纪那些一个病要花几年十几年才找到病原了, 对比一下03年的非典, 这次和当年一样是十二月开始出现病例, 03年一直到三月还在争论是衣原体还是病毒, 确定病原体用了三个多月, 而这次只用了半个月. 科技的进步有目共睹.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;距离2003年非典疫情过去了十七年, 吸取当年的教训建立起来的疾控系统在2020年迎来大考.&lt;/p&gt;
 &lt;p&gt;科研系统的效率是令人惊叹的. 一个全新的未知疾病从送样本到病源确认再到全基因组测序完成, 仅仅用了半个月! 就不说二十世纪那些一个病要花几年十几年才找到病原了, 对比一下03年的非典, 这次和当年一样是十二月开始出现病例, 03年一直到三月还在争论是衣原体还是病毒, 确定病原体用了三个多月, 而这次只用了半个月. 科技的进步有目共睹.&lt;/p&gt;
@@ -14,11 +35,12 @@
 &lt;p&gt;我联想到的是澳大利亚的山火, 已经烧开了, 就只能求天下雨, 或是让火烧到灭了. 但按这个病现在4%的死亡率看, 放任它流行可能会造成数千万感染和上百万的死亡, 这几乎是不可接受的. 现在只能尽量动员抗疫延缓它的传播了. 救火用的是隔离带, 现在封城也是同理. 希望这个病毒不耐热, 到五月让太阳能帮忙消毒.&lt;/p&gt;
 &lt;p&gt;在朋友圈看到, 广东组织了一百多人的医疗队北上支援武汉, 在除夕夜出征, 颇为悲壮, 向英雄致敬.&lt;/p&gt;</content><category term="时事"></category><category term="瘟役"></category></entry><entry><title>又折腾了一回linux</title><link href="https://life.cndenis.com/post/2018/03/install_linux_again.html" rel="alternate"></link><published>2018-03-01T00:00:00+08:00</published><updated>2018-03-01T00:00:00+08:00</updated><author><name>cnDenis</name></author><id>tag:life.cndenis.com,2018-03-01:/post/2018/03/install_linux_again.html</id><summary type="html">&lt;p&gt;实在觉得Windows10不爽, 于是想装个Linux玩玩. 这个春节除了给博客搬家外, 也在自己的机上装好了个Ubuntu环境. 这两篇博文就是在Ubuntu下写的.&lt;/p&gt;
 &lt;p&gt;虽然自己工作就编写运行在Linux下的代码, 但我却对折腾这个系统本身不太感兴趣. 反正公司有运维, 线上有云服务, 都是现成装好的系统, 不用自己去折腾. 上一次在自己的机器上装Linux似乎已经是还在学校的时候, 七八年前的事了.&lt;/p&gt;
-&lt;p&gt;IT界七八年已经是三四个摩尔周期, 跨世代般的遥远了. 折腾起来发现啥都和以前不一样了, 自己落伍好多了.
-&lt;/p&gt;</summary><content type="html">&lt;p&gt;实在觉得Windows10不爽, 于是想装个Linux玩玩. 这个春节除了给博客搬家外, 也在自己的机上装好了个Ubuntu环境. 这两篇博文就是在Ubuntu下写的.&lt;/p&gt;
+&lt;p&gt;IT界七八年已经是三四个摩尔周期, 跨世代般的遥远了. 折腾起来发现啥都和以前不一样了, 自己落伍好多了.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;实在觉得Windows10不爽, 于是想装个Linux玩玩. 这个春节除了给博客搬家外, 也在自己的机上装好了个Ubuntu环境. 这两篇博文就是在Ubuntu下写的.&lt;/p&gt;
 &lt;p&gt;虽然自己工作就编写运行在Linux下的代码, 但我却对折腾这个系统本身不太感兴趣. 反正公司有运维, 线上有云服务, 都是现成装好的系统, 不用自己去折腾. 上一次在自己的机器上装Linux似乎已经是还在学校的时候, 七八年前的事了.&lt;/p&gt;
-&lt;p&gt;IT界七八年已经是三四个摩尔周期, 跨世代般的遥远了. 折腾起来发现啥都和以前不一样了, 自己落伍好多了.
-&lt;/p&gt;
+&lt;p&gt;IT界七八年已经是三四个摩尔周期, 跨世代般的遥远了. 折腾起来发现啥都和以前不一样了, 自己落伍好多了.&lt;/p&gt;
+
+
 &lt;p&gt;首先装系统要分区, 找到我用起来最顺手的EPM(吐槽一下, 这软件支持十几种语言, 唯独没有中文版, 但却是国内的公司出品的), 分区表的样子跟以前的不太一样了, 多了好几个不道知做什么的小分区. 查了一下才知道现在的分区表用的是GPT了, 不像以前的MBR需要搞扩展分区. 启动方式也变成了UEFI, 不再叫BIOS了. 把以前的数据盘缩小了一下, 腾出50G的空闲, 就可以准备装系统了.&lt;/p&gt;
 &lt;p&gt;装啥版本呢? 毕竟是想要一个实用的系统而不是只是单纯的体验一下, 按以前的印像用Ubuntu应该是最省心的, 版本选LTS的, 尽可能减少麻烦.&lt;/p&gt;
 &lt;p&gt;怎么装呢, 想当年有个东西可以在Windows下装Ubuntu的工具, 叫Wubi, 找了一下发现在五年前就已经不再支持了(再次感慨自己的知识好陈旧...), 我的笔记本没有光驱, 虽然有外置光驱但也没有可以刻录的光盘, 还是找个U盘做启动盘吧.&lt;/p&gt;
@@ -30,10 +52,11 @@
 &lt;p&gt;终于可以打进字了, 为啥中英混排的地方, 英文比中文要高半行? 这特么太难看了吧. 上网搜好用的等宽字体, 那些介绍十种好看的字体的人都特么是不用中文的高人么? 一个个下载下来试看, 中文显示或是中英混排都是一垞屎. 我在Windows下用的是Consolas, 也有不少人推荐用它和雅黑的混合体, 装上去初看是不错, 但一看Python代码就不对劲, 空格和别的字母居然不是等宽的! 最后还是知乎找到有人推荐这个Iosevka, 至少看起来是正常的字体: 中英文等高, 宽度2:1, 空格与英文等宽.&lt;/p&gt;
 &lt;p&gt;搞了这么一大通, 终于有个基本能用的桌面了. 就这样的使用体验, Linux的桌面市场可想而知. 整个过程如果不是一个能折腾的程序员估计是难以搞定的. 还想吐槽一下网上的中文信息, 错误的和落后的资料太多了, 照着做就是各种踩雷.&lt;/p&gt;
 &lt;p&gt;生命在于折腾嘛, 哪天折腾不动了, 那就真的是老了...&lt;/p&gt;</content><category term="折腾电脑"></category><category term="Ubuntu"></category></entry><entry><title>给博客搬了个家</title><link href="https://life.cndenis.com/post/2018/02/blog_migrated_to_new_site.html" rel="alternate"></link><published>2018-02-22T00:00:00+08:00</published><updated>2018-02-22T00:00:00+08:00</updated><author><name>cnDenis</name></author><id>tag:life.cndenis.com,2018-02-22:/post/2018/02/blog_migrated_to_new_site.html</id><summary type="html">&lt;p&gt;作为一个码农, 博客是自己最基础的招牌了, 这个春节有时间把博客重新打理了一下, 换个了看起来现代化一些的主题, 至少不至于一眼看去太难堪.&lt;/p&gt;
-&lt;p&gt;技术博客都好几年没有更新了. 之前有一次想继续写一下, 在自己电脑装Github Page的官方开发环境, 发现相当麻烦. Github把版本升级了, 原先有些东西不能用了, 这让我相当的郁闷, 好端端的升啥级呢, 而且还搞不兼容升级, 这不是坑么. Jekyll是基于Ruby的, 我又不太熟悉, 出问题没法RTFC来解决, 而且Ruby对于Windows的开发环境还不太友好, 再加上伟大的墙, 各种麻烦折腾得我都不想写了. 这次把渲染引擎换成基于Python的Pelican, 至少环境可控, 不会一提交就收到渲染失败的通知邮件.
-&lt;/p&gt;</summary><content type="html">&lt;p&gt;作为一个码农, 博客是自己最基础的招牌了, 这个春节有时间把博客重新打理了一下, 换个了看起来现代化一些的主题, 至少不至于一眼看去太难堪.&lt;/p&gt;
-&lt;p&gt;技术博客都好几年没有更新了. 之前有一次想继续写一下, 在自己电脑装Github Page的官方开发环境, 发现相当麻烦. Github把版本升级了, 原先有些东西不能用了, 这让我相当的郁闷, 好端端的升啥级呢, 而且还搞不兼容升级, 这不是坑么. Jekyll是基于Ruby的, 我又不太熟悉, 出问题没法RTFC来解决, 而且Ruby对于Windows的开发环境还不太友好, 再加上伟大的墙, 各种麻烦折腾得我都不想写了. 这次把渲染引擎换成基于Python的Pelican, 至少环境可控, 不会一提交就收到渲染失败的通知邮件.
-&lt;/p&gt;
+&lt;p&gt;技术博客都好几年没有更新了. 之前有一次想继续写一下, 在自己电脑装Github Page的官方开发环境, 发现相当麻烦. Github把版本升级了, 原先有些东西不能用了, 这让我相当的郁闷, 好端端的升啥级呢, 而且还搞不兼容升级, 这不是坑么. Jekyll是基于Ruby的, 我又不太熟悉, 出问题没法RTFC来解决, 而且Ruby对于Windows的开发环境还不太友好, 再加上伟大的墙, 各种麻烦折腾得我都不想写了. 这次把渲染引擎换成基于Python的Pelican, 至少环境可控, 不会一提交就收到渲染失败的通知邮件.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;作为一个码农, 博客是自己最基础的招牌了, 这个春节有时间把博客重新打理了一下, 换个了看起来现代化一些的主题, 至少不至于一眼看去太难堪.&lt;/p&gt;
+&lt;p&gt;技术博客都好几年没有更新了. 之前有一次想继续写一下, 在自己电脑装Github Page的官方开发环境, 发现相当麻烦. Github把版本升级了, 原先有些东西不能用了, 这让我相当的郁闷, 好端端的升啥级呢, 而且还搞不兼容升级, 这不是坑么. Jekyll是基于Ruby的, 我又不太熟悉, 出问题没法RTFC来解决, 而且Ruby对于Windows的开发环境还不太友好, 再加上伟大的墙, 各种麻烦折腾得我都不想写了. 这次把渲染引擎换成基于Python的Pelican, 至少环境可控, 不会一提交就收到渲染失败的通知邮件.&lt;/p&gt;
+
+
 &lt;p&gt;Pelican一开始整还是一头雾水的, 引擎加模板几十个参数慢慢看, 一个个试效果. 断断续续搞了几天终于把博客搞得稍微像样一点了&lt;/p&gt;
 &lt;p&gt;然后发布又是个问题. Github Page目前分为两类页面: 用户页面和项目页面. 用户页面就是
 cndenis.github.io根目录上的那个页面, 项目页面是子目录下的. 原先是可以选择在master根目录, master的/doc目录或gh-pages分支这三者里选一个发布的, 现在只能够在master分支的根目录上发布. 这就有点蛋疼了, 原先用Jekyll的话, 因为渲染是Github帮我做的, 我把源码写在master提交上去, Github帮我出页面, 不影响我写的源码. 但现在改用Pelican后是我自己生成页面后提交, 要不然就是把生成的页面和源码都混在一起, 要不就是要把源码放到其他分支去. 这两者我都不想. 好在项目页面可以选择在gh-pages分支上发布, 于是我就把代码迁到一个新的项目上搞. 反正我有自己的域名, 主页就不用放在某个子路径下了.&lt;/p&gt;

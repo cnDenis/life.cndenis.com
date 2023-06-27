@@ -32,7 +32,6 @@
     <link href="https://life.cndenis.com/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="https://life.cndenis.com/theme/css/pygments/monokai.css" rel="stylesheet">
-    <link href="https://life.cndenis.com/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="https://life.cndenis.com/theme/css/style.css" type="text/css"/>
         <link href="https://life.cndenis.com/static/custom.css" rel="stylesheet">
 
@@ -41,6 +40,7 @@
 
         <link href="https://life.cndenis.com/feeds/zhe-teng-dian-nao.atom.xml" type="application/atom+xml" rel="alternate"
               title="cnDenis的碎碎念 折腾电脑 ATOM Feed"/>
+
 </head>
 <body>
 
@@ -62,11 +62,6 @@ cnDenis的碎碎念            </a>
                     <li><a href="https://blog.cndenis.com/pages/about.html">关于我</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><span>
-                <form class="navbar-search" action="/search.html">
-                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
-                </form></span>
-              </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -97,7 +92,7 @@ cnDenis的碎碎念            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2018-03-01T00:00:00+08:00"> 2018年03月01日 星期周四</time>
+        <i class="fa fa-calendar"></i><time datetime="2018-03-01T00:00:00+08:00"> 2018年03月01日 星期四</time>
     </span>
 
 
@@ -118,10 +113,12 @@ cnDenis的碎碎念            </a>
                         https://life.cndenis.com/post/2018/03/install_linux_again.html
                     </a>
                 </p>
-                <p>实在觉得Windows10不爽, 于是想装个Linux玩玩. 这个春节除了给博客搬家外, 也在自己的机上装好了个Ubuntu环境. 这两篇博文就是在Ubuntu下写的.</p>
+                <main>
+                    <p>实在觉得Windows10不爽, 于是想装个Linux玩玩. 这个春节除了给博客搬家外, 也在自己的机上装好了个Ubuntu环境. 这两篇博文就是在Ubuntu下写的.</p>
 <p>虽然自己工作就编写运行在Linux下的代码, 但我却对折腾这个系统本身不太感兴趣. 反正公司有运维, 线上有云服务, 都是现成装好的系统, 不用自己去折腾. 上一次在自己的机器上装Linux似乎已经是还在学校的时候, 七八年前的事了.</p>
-<p>IT界七八年已经是三四个摩尔周期, 跨世代般的遥远了. 折腾起来发现啥都和以前不一样了, 自己落伍好多了.
-</p>
+<p>IT界七八年已经是三四个摩尔周期, 跨世代般的遥远了. 折腾起来发现啥都和以前不一样了, 自己落伍好多了.</p>
+
+
 <p>首先装系统要分区, 找到我用起来最顺手的EPM(吐槽一下, 这软件支持十几种语言, 唯独没有中文版, 但却是国内的公司出品的), 分区表的样子跟以前的不太一样了, 多了好几个不道知做什么的小分区. 查了一下才知道现在的分区表用的是GPT了, 不像以前的MBR需要搞扩展分区. 启动方式也变成了UEFI, 不再叫BIOS了. 把以前的数据盘缩小了一下, 腾出50G的空闲, 就可以准备装系统了.</p>
 <p>装啥版本呢? 毕竟是想要一个实用的系统而不是只是单纯的体验一下, 按以前的印像用Ubuntu应该是最省心的, 版本选LTS的, 尽可能减少麻烦.</p>
 <p>怎么装呢, 想当年有个东西可以在Windows下装Ubuntu的工具, 叫Wubi, 找了一下发现在五年前就已经不再支持了(再次感慨自己的知识好陈旧...), 我的笔记本没有光驱, 虽然有外置光驱但也没有可以刻录的光盘, 还是找个U盘做启动盘吧.</p>
@@ -133,6 +130,7 @@ cnDenis的碎碎念            </a>
 <p>终于可以打进字了, 为啥中英混排的地方, 英文比中文要高半行? 这特么太难看了吧. 上网搜好用的等宽字体, 那些介绍十种好看的字体的人都特么是不用中文的高人么? 一个个下载下来试看, 中文显示或是中英混排都是一垞屎. 我在Windows下用的是Consolas, 也有不少人推荐用它和雅黑的混合体, 装上去初看是不错, 但一看Python代码就不对劲, 空格和别的字母居然不是等宽的! 最后还是知乎找到有人推荐这个Iosevka, 至少看起来是正常的字体: 中英文等高, 宽度2:1, 空格与英文等宽.</p>
 <p>搞了这么一大通, 终于有个基本能用的桌面了. 就这样的使用体验, Linux的桌面市场可想而知. 整个过程如果不是一个能折腾的程序员估计是难以搞定的. 还想吐槽一下网上的中文信息, 错误的和落后的资料太多了, 照着做就是各种踩雷.</p>
 <p>生命在于折腾嘛, 哪天折腾不动了, 那就真的是老了...</p>
+                </main>
                 <p class="permalink"> 原文地址:
                     <a href="https://life.cndenis.com/post/2018/03/install_linux_again.html"
                        rel="bookmark"
@@ -194,7 +192,7 @@ cnDenis的碎碎念            </a>
     <li class="list-group-item tag-4">
       <a href="https://life.cndenis.com/tag/ubuntu.html">Ubuntu</a>
     </li>
-    <li class="list-group-item tag-1">
+    <li class="list-group-item tag-4">
       <a href="https://life.cndenis.com/tag/wen-yi.html">瘟役</a>
     </li>
   </ul>
@@ -220,7 +218,7 @@ cnDenis的碎碎念            </a>
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Archive</span></h4>
   <ul class="list-group" id="archive">
         <li class="list-group-item">
-          <a href="https://life.cndenis.com/archive/2020/04/index.html"><i class="fa fa-calendar fa-lg"></i>四月 2020 (1)
+          <a href="https://life.cndenis.com/archive/2023/06/index.html"><i class="fa fa-calendar fa-lg"></i>六月 2023 (1)
           </a>
         </li>
         <li class="list-group-item">
@@ -250,7 +248,7 @@ cnDenis的碎碎念            </a>
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2020 cnDenis
+         <div class="col-xs-10">&copy; 2023 cnDenis
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-cn"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
