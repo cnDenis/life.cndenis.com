@@ -1,7 +1,5 @@
-pip install bs4
-pip install pelican
-pip install pelican[Markdown]
-pip install gph-import
+#!/bin/sh
+pip install -r requirements.txt
 
 cd ..
 git clone https://github.com/getpelican/pelican-plugins.git
