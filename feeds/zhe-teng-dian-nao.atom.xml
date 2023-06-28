@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>cnDenis的碎碎念 - 折腾电脑</title><link href="https://life.cndenis.com/" rel="alternate"></link><link href="https://life.cndenis.com/feeds/zhe-teng-dian-nao.atom.xml" rel="self"></link><id>https://life.cndenis.com/</id><updated>2023-06-23T00:00:00+08:00</updated><entry><title>2023年端午节的一点碎碎念</title><link href="https://life.cndenis.com/post/2023/06/something_in_2023.html" rel="alternate"></link><published>2023-06-23T00:00:00+08:00</published><updated>2023-06-23T00:00:00+08:00</updated><author><name>cnDenis</name></author><id>tag:life.cndenis.com,2023-06-23:/post/2023/06/something_in_2023.html</id><summary type="html">&lt;p&gt;上一篇博客还是疫情刚开始, 这一篇已经是放开了.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>cnDenis的碎碎念 - 折腾电脑</title><link href="https://life.cndenis.com/" rel="alternate"></link><link href="https://life.cndenis.com/feeds/zhe-teng-dian-nao.atom.xml" rel="self"></link><id>https://life.cndenis.com/</id><updated>2023-06-28T00:00:00+08:00</updated><entry><title>博客部署方法</title><link href="https://life.cndenis.com/post/2023/06/deploy_this_blog.html" rel="alternate"></link><published>2023-06-28T00:00:00+08:00</published><updated>2023-06-28T00:00:00+08:00</updated><author><name>cnDenis</name></author><id>tag:life.cndenis.com,2023-06-28:/post/2023/06/deploy_this_blog.html</id><summary type="html">&lt;p&gt;不知道下次更新会是啥时间, 还是记录一下这个博客的部署步骤吧, 免得到时又要重新研究.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;不知道下次更新会是啥时间, 还是记录一下这个博客的部署步骤吧, 免得到时又要重新研究.&lt;/p&gt;
+
+
+&lt;p&gt;由于Windows现在有WSL, 可以很方便地使用Linux环境了, 所以这里只考虑Linux环境下运行, 步骤如下:&lt;/p&gt;
+&lt;h4&gt;0. 安装 Python, pip, git, make 等依赖, 安装好系统语言, 配置好SSH密钥&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt install python3 python3-pip git make
+sudo locale-gen zh_CN
+sudo locale-gen zh_CN.utf8
+sudo update-locale
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;1. 从 github 上签出博客代码和依赖, 进入代码目录, 执行&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git&lt;span class="w"&gt; &lt;/span&gt;clone&lt;span class="w"&gt; &lt;/span&gt;git@github.com:cnDenis/life.cndenis.com.git
+git&lt;span class="w"&gt; &lt;/span&gt;clone&lt;span class="w"&gt; &lt;/span&gt;git@github.com:cnDenis/pelican-themes.git
+git&lt;span class="w"&gt; &lt;/span&gt;clone&lt;span class="w"&gt; &lt;/span&gt;https://github.com/getpelican/pelican-plugins.git
+
+&lt;span class="c1"&gt;# 把主题切到自己的分支&lt;/span&gt;
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;pelican-themes
+git&lt;span class="w"&gt; &lt;/span&gt;checkout&lt;span class="w"&gt; &lt;/span&gt;denis
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;..
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;2. 安装依赖, 假设不需要使用 venv&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;life.cndenis.com
+pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;-r&lt;span class="w"&gt; &lt;/span&gt;requirements.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;3. 启动测试服, 服务器会开在&lt;a href="http://localhost:8000"&gt;http://localhost:8000&lt;/a&gt;, 并会监测文件变动实时更新&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make&lt;span class="w"&gt; &lt;/span&gt;serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;4. 上传到 Github Page, 先停掉测试服务器, 提交代码, 然后执行:&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make&lt;span class="w"&gt; &lt;/span&gt;github
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;上传完有可能 Github Page 的页面还是没有变化, 这时需要到 github 上, 切到 gh-page 分支,
+在 github 的页面版编辑 index.html, 做点无关紧要的改动, 加个空格之类, 提交一下, 过一会刷新一下就好了.&lt;/p&gt;</content><category term="折腾电脑"></category><category term="Blog"></category><category term="Pelican"></category></entry><entry><title>2023年端午节的一点碎碎念</title><link href="https://life.cndenis.com/post/2023/06/something_in_2023.html" rel="alternate"></link><published>2023-06-23T00:00:00+08:00</published><updated>2023-06-23T00:00:00+08:00</updated><author><name>cnDenis</name></author><id>tag:life.cndenis.com,2023-06-23:/post/2023/06/something_in_2023.html</id><summary type="html">&lt;p&gt;上一篇博客还是疫情刚开始, 这一篇已经是放开了.&lt;/p&gt;
 &lt;p&gt;这个博客荒了好多年了, 估计长的蘑菇上面还能再长蘑菇了. 从git上把代码搞下来, 依赖的搜索插件都已经废弃不能用了.
 折腾半天换了它推荐的替代库, 发现对中文支持实在不行, 没有分词, 几乎不可用, 算了, 有需要搜还是用搜索引擎吧.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;上一篇博客还是疫情刚开始, 这一篇已经是放开了.&lt;/p&gt;
