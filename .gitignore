@@ -2,3 +2,6 @@ Thumbs.db
 *.sublime-workspace
 output/*
 *.pyc
+
+pelican.pid
+srv.pid

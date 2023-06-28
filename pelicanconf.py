@@ -7,12 +7,14 @@ AUTHOR = u'cnDenis'
 SITENAME = u'cnDenis的碎碎念'
 SITEURL = 'http://localhost:8000'
 
-PATH = '_posts'
+PATH = 'content'
 
 TIMEZONE = 'Asia/Shanghai'
-DEFAULT_DATE_FORMAT = u'%Y年%m月%d日 星期%a'
+DEFAULT_DATE_FORMAT = '%Y年%m月%d日 星期%a'
 
-DEFAULT_LANG = u'zh-CN'
+DEFAULT_LANG = 'zh-CN'
+
+LOCALE = ('zh_CN.utf8', 'zh-CN')
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -36,7 +38,7 @@ LINKS = (
 # Social widget
 SOCIAL = (('我的Github', 'https://github.com/cnDenis'),
           ('我的Twitter', 'https://twitter.com/cndenis'),
-)
+          )
 
 DEFAULT_PAGINATION = 6
 SUMMARY_MAX_LENGTH = 20
@@ -54,25 +56,26 @@ MONTH_ARCHIVE_SAVE_AS = 'archive/{date:%Y}/{date:%m}/index.html'  # 按月份显
 FILENAME_METADATA = r'(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
 
 STATIC_PATHS = [
-    'images',
+    # 'images',
     'extra'
 ]
 
 EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'static/custom.css'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
     # 'extra/custom.js': {'path': 'static/js/custom.js'}
 }
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = os.path.join(os.path.dirname(os.path.realpath(__file__)), '../pelican-themes/pelican-bootstrap3')
+THEME = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                     '../pelican-themes/pelican-bootstrap3')
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 PLUGIN_PATHS = [os.path.join(os.path.dirname(os.path.realpath(__file__)), '../pelican-plugins')]
 PLUGINS = [
     'i18n_subsites',
     'tag_cloud',
-    'tipue_search',
     'summary'
 ]
 
@@ -83,7 +86,7 @@ DIRECT_TEMPLATES = (
     'categories',
     # 'authors',
     'archives',
-    'search'
+    # 'search'
 )  # 直接由模板生成的页面, 前四个是默认值
 
 CUSTOM_CSS = 'static/custom.css'
