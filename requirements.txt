@@ -1,4 +1,0 @@
-pelican
-markdown
-beautifulsoup4
-ghp-import

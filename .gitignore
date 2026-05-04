@@ -1,18 +1,13 @@
-Thumbs.db
-*.sublime-workspace
-output/*
-*.pyc
-
-pelican.pid
-srv.pid
-
-themes
 # Hugo output
 public/
 resources/
 
 # OS files
 .DS_Store
+Thumbs.db
+*.sublime-workspace
 
 .claude
 .hugo_build.lock
+
+themes
