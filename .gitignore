@@ -5,3 +5,14 @@ output/*
 
 pelican.pid
 srv.pid
+
+themes
+# Hugo output
+public/
+resources/
+
+# OS files
+.DS_Store
+
+.claude
+.hugo_build.lock

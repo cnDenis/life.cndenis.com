@@ -1,0 +1,133 @@
+baseURL: 'https://life.cndenis.com/'
+title: 'cnDenis的碎碎念'
+author: cnDenis
+defaultContentLanguage: 'zh'
+defaultContentLanguageInSubdir: false
+locale: 'zh-CN'
+timeZone: 'Asia/Shanghai'
+theme: 'hugo-theme-stack'
+
+# Disable generation of RSS and sitemap
+disableKinds:
+  - RSS
+  - sitemap
+
+# Permalinks to match Pelican URL structure exactly
+# uglyURLs: true adds .html extension automatically
+permalinks:
+  post: '/post/:year/:month/:slug'
+  categories: '/category/:slug'
+  tags: '/tag/:slug'
+
+# Configure taxonomies to match Pelican (category/xxx, tag/xxx)
+taxonomies:
+  category: categories
+  tag: tags
+
+# Content settings
+contentDir: content
+ignoreFiles:
+  - ^2018/
+  - ^2020/
+  - ^2023/
+pagination:
+  pagerSize: 4
+uglyURLs: true
+canonifyURLs: false
+relativeURLs: false
+
+# Markdown config
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      definitionList: true
+      footnote: true
+      table: true
+      strikethrough: true
+      linkify: true
+      taskList: true
+  highlight:
+    style: monokai
+    noClasses: false
+
+# Navigation menu matching Pelican MENUITEMS
+menu:
+  main:
+    - identifier: tech-notes
+      name: 技术笔记
+      url: https://blog.cndenis.com
+      weight: 1
+    - identifier: archive
+      name: 归档
+      url: /archives.html
+      weight: 2
+    - identifier: about
+      name: 关于我
+      url: /pages/about.html
+      weight: 3
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/cnDenis
+      params:
+        icon: brand-github
+    - identifier: twitter
+      name: Twitter
+      url: https://twitter.com/cndenis
+      params:
+        icon: brand-twitter
+
+# Site params for Stack theme
+params:
+  mainSections:
+    - post
+
+  # Sidebar
+  sidebar:
+    compact: false
+    subtitle: cnDenis的碎碎念
+    avatar: /images/avatar.jpg
+
+  # Date format matching Pelican
+  dateFormat:
+    published: '2006年01月02日 Mon'
+    lastUpdated: '2006年01月02日 Mon'
+
+  # Article settings
+  article:
+    headingAnchor: false
+    toc: true
+    readingTime: true
+    license:
+      enabled: true
+      default: Licensed under CC BY-NC-SA 4.0
+
+  # Widgets for right sidebar (no right sidebar, so widgets are in left sidebar)
+  widgets:
+    page:
+      - type: toc
+
+  # Footer
+  footer:
+    since: 2018
+
+  # Color scheme
+  colorScheme:
+    toggle: true
+    default: auto
+
+  # Opengraph
+  opengraph:
+    twitter:
+      site: cndenis
+
+  # Image processing
+  imageProcessing:
+    content:
+      enabled: false
+    thumbnail:
+      enabled: false
+    external:
+      timeout: 5s

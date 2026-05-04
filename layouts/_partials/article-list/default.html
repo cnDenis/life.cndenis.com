@@ -1,0 +1,16 @@
+{{ $image := partial "helper/image" (dict "Image" .Params.image "Resources" .Resources "Context" .) }}
+<article class="{{ if $image }}has-image{{ end }}">
+    {{ partial "article/components/header" (dict "Page" . "IsList" true) }}
+
+    {{ if .Summary }}
+    <div class="article-summary">
+        {{ .Summary | plainify }}
+    </div>
+    {{ end }}
+
+    <div class="article-footer-actions">
+        <a href="{{ .RelPermalink }}" class="article-read-more">
+            阅读全文 →
+        </a>
+    </div>
+</article>
