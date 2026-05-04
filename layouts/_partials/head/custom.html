@@ -173,6 +173,16 @@
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
 
+    /* Subsection-list tiles - compact when no image */
+    .subsection-list .article-list--tile article:not(.has-image) {
+        height: auto;
+    }
+    .subsection-list .article-list--tile article:not(.has-image) .article-details {
+        justify-content: center !important;
+        text-align: center;
+        padding: 18px 15px !important;
+    }
+
     /* Tag cloud in left sidebar */
     .sidebar-tagcloud {
         padding: 20px;
